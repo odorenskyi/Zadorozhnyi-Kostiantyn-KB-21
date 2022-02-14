@@ -25,7 +25,7 @@ int main()
 
     cout << copyright() << endl;
 
-    cout << trueOrFalse(a, b) << endl;
+    cout << returnExpression(a, b) << endl;
 
     cout << decimal(x, y, z) << endl;
 

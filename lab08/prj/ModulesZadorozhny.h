@@ -18,7 +18,7 @@ string boolToString(bool b);
 
 string copyright();
 
-string trueOrFalse(int a, int  b);
+string returnExpression(int a, int  b);
 
 string decimal(int x, int y, int z);
 
