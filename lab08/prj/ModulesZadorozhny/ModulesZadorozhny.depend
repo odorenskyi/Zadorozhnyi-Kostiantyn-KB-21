@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1644823055 source:d:\bmtp\zadorozhnyi-kostiantyn-kb-21\lab08\prj\moduleszadorozhny\main.cpp
+	<iostream>
+	<math.h>
+	<tgmath.h>
+	<windows.h>
+	<string>
+

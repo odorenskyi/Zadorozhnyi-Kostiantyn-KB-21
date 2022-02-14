@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1644830887 source:d:\bmtp\zadorozhnyi-kostiantyn-kb-21\lab08\prj\zadorozhny_task\main.cpp
+	<iostream>
+	<cmath>
+	<ModulesZadorozhny.h>
+	<windows.h>
+
+1644823196 d:\bmtp\zadorozhnyi-kostiantyn-kb-21\lab08\prj\moduleszadorozhny.h
+	<iostream>
+	<cmath>
+	<string>
+	<windows.h>
+
