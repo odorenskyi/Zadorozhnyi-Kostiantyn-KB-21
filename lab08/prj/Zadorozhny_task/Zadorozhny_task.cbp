@@ -16,6 +16,9 @@
 					<Add directory="../../prj" />
 				</Compiler>
 				<Linker>
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-static" />
 					<Add library="../ModulesZadorozhny/bin/Debug/libModulesZadorozhny.a" />
 				</Linker>
 			</Target>
