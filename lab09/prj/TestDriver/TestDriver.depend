@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1645814157 source:d:\bmtp\zadorozhnyi-kostiantyn-kb-21\lab09\prj\testdriver\main.cpp
+	"../ModulesZadorozhny.h"
+
+1645813980 d:\bmtp\zadorozhnyi-kostiantyn-kb-21\lab09\prj\moduleszadorozhny.h
+	<iostream>
+	<cmath>
+	<string>
+	<windows.h>
+
