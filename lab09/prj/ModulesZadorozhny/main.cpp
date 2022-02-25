@@ -35,6 +35,22 @@ int task_9_1(int salary, int work_exp){
     }
 }
 
+string head_task_9_1(int salary, int work_exp){
+
+    if(work_exp >= 2 && work_exp < 5){
+        return "Allowance - 5%, salary - " + to_string(salary * 1.05);
+    }
+    else if(work_exp >= 5 && work_exp < 10){
+        return "Allowance - 10%, salary - " + to_string(salary * 1.1);
+    }
+    else if(work_exp >= 10){
+        return "Allowance - 25%, salary - " + to_string(salary * 1.25);
+    }
+    else{
+        return "Allowance - 0%, salary - " + to_string(salary);
+    }
+}
+
 string task_9_2(int size_head){
 
     switch(size_head){
