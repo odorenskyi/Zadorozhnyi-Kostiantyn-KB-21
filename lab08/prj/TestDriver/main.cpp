@@ -1,8 +1,4 @@
-#include <iostream>
 #include <ModulesZadorozhny.h>
-
-
-using namespace std;
 
 int main()
 {
