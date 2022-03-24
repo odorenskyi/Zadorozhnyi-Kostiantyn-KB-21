@@ -15,6 +15,9 @@
 					<Add option="-g" />
 				</Compiler>
 				<Linker>
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-static" />
 					<Add library="../ModulesZadorozhny/bin/Debug/libModulesZadorozhny.a" />
 				</Linker>
 			</Target>
@@ -35,6 +38,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="../../TextFile/auto_test.txt" />
 		<Unit filename="../../TextFile/input.txt" />
 		<Unit filename="../../TextFile/output.txt" />
 		<Unit filename="../ModulesZadorozhny.h" />

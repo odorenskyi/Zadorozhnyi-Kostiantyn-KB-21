@@ -79,5 +79,7 @@ int main()
         }
     }
     auto_test.close();
+
+    getchar();
     return 0;
 }
