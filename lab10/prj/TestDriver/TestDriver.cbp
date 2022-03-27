@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="../../prj" />
 				</Compiler>
 				<Linker>
 					<Add option="-static-libstdc++" />
@@ -38,9 +39,6 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="../../TextFile/auto_test.txt" />
-		<Unit filename="../../TextFile/input.txt" />
-		<Unit filename="../../TextFile/output.txt" />
 		<Unit filename="../ModulesZadorozhny.h" />
 		<Unit filename="main.cpp" />
 		<Extensions />

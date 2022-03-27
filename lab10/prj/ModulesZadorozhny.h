@@ -39,6 +39,8 @@ int task_10_2(string path_file);
 
 int task_10_3(float x, float y, float z, int b, string path_file);
 
+string ReadFile(string path_file);
+
 vector<string> Input();
 
 vector<string> ExpectedResultTest_10_1();
@@ -46,8 +48,5 @@ vector<string> ExpectedResultTest_10_1();
 vector<string> ExpectedResultTest_10_2();
 
 vector<string> ExpectedResultTest_10_3();
-
-string ReadFile(string path_file);
-
 
 #endif // MODULESZADOROZHNY_H_H_INCLUDED

@@ -5,11 +5,8 @@
 
 using namespace std;
 
-
-
 int main()
 {
-
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
     string path_input = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\TextFile\\input.txt";
@@ -33,8 +30,7 @@ int main()
         file_input << input_db[i] << endl;
         file_input.close();
 
-
-        //task_10_1
+        //test task_10_1
         task_10_1(path_output, path_input);
 
         string read;
@@ -49,7 +45,7 @@ int main()
             cout << "Task 10.1 - failed" << endl;
         }
 
-        //task_10_2
+        //test task_10_2
 
         task_10_2(path_input);
 
@@ -64,7 +60,7 @@ int main()
             cout << "Task 10.2 - failed" << endl;
         }
 
-        //task_10_3
+        //test task_10_3
         task_10_3(10.5, 4.3, 5, 10, path_output);
 
         read = ReadFile(path_output);
