@@ -9,16 +9,33 @@ int main()
 {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
+    string path_exp_input_1 = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\prj\\TestDriver\\TextFilesToTestDriver\\Input\\input_1.txt";
+    string path_exp_input_2 = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\prj\\TestDriver\\TextFilesToTestDriver\\Input\\input_2.txt";
+    string path_exp_input_3 = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\prj\\TestDriver\\TextFilesToTestDriver\\Input\\input_3.txt";
+
+    string path_exp_test_10_1_1 = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\prj\\TestDriver\\TextFilesToTestDriver\\ExpResTest_10_1\\expected_result_test_10_1_1.txt";
+    string path_exp_test_10_1_2 = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\prj\\TestDriver\\TextFilesToTestDriver\\ExpResTest_10_1\\expected_result_test_10_1_2.txt";
+    string path_exp_test_10_1_3 = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\prj\\TestDriver\\TextFilesToTestDriver\\ExpResTest_10_1\\expected_result_test_10_1_3.txt";
+
+    string path_exp_test_10_2_1 = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\prj\\TestDriver\\TextFilesToTestDriver\\ExpResTest_10_2\\expected_result_test_10_2_1.txt";
+    string path_exp_test_10_2_2 = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\prj\\TestDriver\\TextFilesToTestDriver\\ExpResTest_10_2\\expected_result_test_10_2_2.txt";
+    string path_exp_test_10_2_3 = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\prj\\TestDriver\\TextFilesToTestDriver\\ExpResTest_10_2\\expected_result_test_10_2_3.txt";
+
+    string path_exp_test_10_3_1 = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\prj\\TestDriver\\TextFilesToTestDriver\\ExpResTest_10_3\\expected_result_test_10_3_1.txt";
+    string path_exp_test_10_3_2 = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\prj\\TestDriver\\TextFilesToTestDriver\\ExpResTest_10_3\\expected_result_test_10_3_2.txt";
+    string path_exp_test_10_3_3 = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\prj\\TestDriver\\TextFilesToTestDriver\\ExpResTest_10_3\\expected_result_test_10_3_3.txt";
+
+
     string path_input = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\TextFile\\input.txt";
     string path_output = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\TextFile\\output.txt";
 
-    vector<string> input_db = Input();
+    vector<string> input_db = Input(path_exp_input_1, path_exp_input_2, path_exp_input_3);
 
-    vector<string> Test_10_1 = ExpectedResultTest_10_1();
+    vector<string> Test_10_1 = ExpectedResultTest_10_1(path_exp_test_10_1_1, path_exp_test_10_1_2, path_exp_test_10_1_3);
 
-    vector<string> Test_10_2 = ExpectedResultTest_10_2();
+    vector<string> Test_10_2 = ExpectedResultTest_10_2(path_exp_test_10_2_1, path_exp_test_10_2_2, path_exp_test_10_2_3);
 
-    vector<string> Test_10_3 = ExpectedResultTest_10_3();
+    vector<string> Test_10_3 = ExpectedResultTest_10_3(path_exp_test_10_3_1, path_exp_test_10_3_2, path_exp_test_10_3_3);
 
 
     ofstream auto_test("D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\TextFile\\auto_test.txt");
@@ -43,6 +60,10 @@ int main()
         else{
             auto_test << "Task 10.1 - failed" << endl;
             cout << "Task 10.1 - failed" << endl;
+            cout << "Result" << endl;
+            cout << read << endl;
+            cout << "Expected Result" << endl;
+            cout << Test_10_1[i] << endl;
         }
 
         //test task_10_2
@@ -58,6 +79,9 @@ int main()
         else{
             auto_test << "Task 10.2 - failed" << endl;
             cout << "Task 10.2 - failed" << endl;
+            cout << read << endl;
+            cout << "Expected Result" << endl;
+            cout << Test_10_2[i] << endl;
         }
 
         //test task_10_3
@@ -72,6 +96,9 @@ int main()
         else{
             auto_test << "Task 10.3 - failed" << endl;
             cout << "Task 10.3 - failed" << endl;
+            cout << read << endl;
+            cout << "Expected Result" << endl;
+            cout << Test_10_3[i] << endl;
         }
     }
     auto_test.close();

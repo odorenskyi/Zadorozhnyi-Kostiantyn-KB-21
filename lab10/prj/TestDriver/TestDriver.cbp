@@ -40,6 +40,18 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="../ModulesZadorozhny.h" />
+		<Unit filename="TextFilesToTestDriver/ExpResTest_10_1/expected_result_test_10_1_1.txt" />
+		<Unit filename="TextFilesToTestDriver/ExpResTest_10_1/expected_result_test_10_1_2.txt" />
+		<Unit filename="TextFilesToTestDriver/ExpResTest_10_1/expected_result_test_10_1_3.txt" />
+		<Unit filename="TextFilesToTestDriver/ExpResTest_10_2/expected_result_test_10_2_1.txt" />
+		<Unit filename="TextFilesToTestDriver/ExpResTest_10_2/expected_result_test_10_2_2.txt" />
+		<Unit filename="TextFilesToTestDriver/ExpResTest_10_2/expected_result_test_10_2_3.txt" />
+		<Unit filename="TextFilesToTestDriver/ExpResTest_10_3/expected_result_test_10_3_1.txt" />
+		<Unit filename="TextFilesToTestDriver/ExpResTest_10_3/expected_result_test_10_3_2.txt" />
+		<Unit filename="TextFilesToTestDriver/ExpResTest_10_3/expected_result_test_10_3_3.txt" />
+		<Unit filename="TextFilesToTestDriver/Input/input_1.txt" />
+		<Unit filename="TextFilesToTestDriver/Input/input_2.txt" />
+		<Unit filename="TextFilesToTestDriver/Input/input_3.txt" />
 		<Unit filename="main.cpp" />
 		<Extensions />
 	</Project>
