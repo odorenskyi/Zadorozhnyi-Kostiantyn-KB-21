@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1648456014 source:d:\bmtp\zadorozhnyi-kostiantyn-kb-21\lab10\prj\testdriver\main.cpp
+1648456675 source:d:\bmtp\zadorozhnyi-kostiantyn-kb-21\lab10\prj\testdriver\main.cpp
 	"../ModulesZadorozhny.h"
 	<vector>
 	<windows.h>
