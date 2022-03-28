@@ -43,10 +43,6 @@ string ReadFile(string path_file);
 
 vector<string> Input(string path_input_1, string path_input_2, string path_input_3);
 
-vector<string> ExpectedResultTest_10_1(string path_test_10_1_1, string path_test_10_1_2, string path_test_10_1_3);
-
 vector<string> ExpectedResultTest_10_2(string path_test_10_2_1, string path_test_10_2_2, string path_test_10_2_3);
-
-vector<string> ExpectedResultTest_10_3(string path_test_10_3_1, string path_test_10_3_2, string path_test_10_3_3);
 
 #endif // MODULESZADOROZHNY_H_H_INCLUDED

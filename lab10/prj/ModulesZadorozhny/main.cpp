@@ -213,21 +213,6 @@ vector<string> Input(string path_input_1, string path_input_2, string path_input
 
 }
 
-vector<string> ExpectedResultTest_10_1(string path_test_10_1_1, string path_test_10_1_2, string path_test_10_1_3){
-    vector<string> expected_result;
-    string er_test_10_1_1 = ReadFile(path_test_10_1_1);
-
-    string er_test_10_1_2 = ReadFile(path_test_10_1_2);
-
-    string er_test_10_1_3 = ReadFile(path_test_10_1_3);
-
-    expected_result.push_back(er_test_10_1_1);
-    expected_result.push_back(er_test_10_1_2);
-    expected_result.push_back(er_test_10_1_3);
-
-    return expected_result;
-}
-
 vector<string> ExpectedResultTest_10_2(string path_test_10_2_1, string path_test_10_2_2, string path_test_10_2_3){
     char cur_time[128];
     time_t t = time(NULL);
@@ -253,22 +238,6 @@ vector<string> ExpectedResultTest_10_2(string path_test_10_2_1, string path_test
     expected_result.push_back(test_10_2_1);
     expected_result.push_back(test_10_2_2);
     expected_result.push_back(test_10_2_3);
-
-    return expected_result;
-}
-
-vector<string> ExpectedResultTest_10_3(string path_test_10_3_1, string path_test_10_3_2, string path_test_10_3_3){
-    vector<string> expected_result;
-
-    string test_10_3_1 = ReadFile(path_test_10_3_1);
-
-    string test_10_3_2 = ReadFile(path_test_10_3_2);
-
-    string test_10_3_3 = ReadFile(path_test_10_3_3);
-
-    expected_result.push_back(test_10_3_1);
-    expected_result.push_back(test_10_3_2);
-    expected_result.push_back(test_10_3_3);
 
     return expected_result;
 }

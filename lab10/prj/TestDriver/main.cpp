@@ -31,11 +31,11 @@ int main()
 
     vector<string> input_db = Input(path_exp_input_1, path_exp_input_2, path_exp_input_3);
 
-    vector<string> Test_10_1 = ExpectedResultTest_10_1(path_exp_test_10_1_1, path_exp_test_10_1_2, path_exp_test_10_1_3);
+    vector<string> Test_10_1 = Input(path_exp_test_10_1_1, path_exp_test_10_1_2, path_exp_test_10_1_3);
 
     vector<string> Test_10_2 = ExpectedResultTest_10_2(path_exp_test_10_2_1, path_exp_test_10_2_2, path_exp_test_10_2_3);
 
-    vector<string> Test_10_3 = ExpectedResultTest_10_3(path_exp_test_10_3_1, path_exp_test_10_3_2, path_exp_test_10_3_3);
+    vector<string> Test_10_3 = Input(path_exp_test_10_3_1, path_exp_test_10_3_2, path_exp_test_10_3_3);
 
 
     ofstream auto_test("D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\TextFile\\auto_test.txt");

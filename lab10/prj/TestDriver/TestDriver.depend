@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1648412335 source:d:\bmtp\zadorozhnyi-kostiantyn-kb-21\lab10\prj\testdriver\main.cpp
+1648456014 source:d:\bmtp\zadorozhnyi-kostiantyn-kb-21\lab10\prj\testdriver\main.cpp
 	"../ModulesZadorozhny.h"
 	<vector>
 	<windows.h>
 	<string>
 
-1648411273 d:\bmtp\zadorozhnyi-kostiantyn-kb-21\lab10\prj\moduleszadorozhny.h
+1648456087 d:\bmtp\zadorozhnyi-kostiantyn-kb-21\lab10\prj\moduleszadorozhny.h
 	<iostream>
 	<math.h>
 	<tgmath.h>
