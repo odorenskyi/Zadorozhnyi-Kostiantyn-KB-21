@@ -1,33 +1,30 @@
 #include "../ModulesZadorozhny.h"
 #include <vector>
-#include <windows.h>
 #include <string>
 
 using namespace std;
 
 int main()
 {
-    SetConsoleCP(1251);
-    SetConsoleOutputCP(1251);
-    string path_exp_input_1 = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\prj\\TestDriver\\TextFilesToTestDriver\\Input\\input_1.txt";
-    string path_exp_input_2 = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\prj\\TestDriver\\TextFilesToTestDriver\\Input\\input_2.txt";
-    string path_exp_input_3 = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\prj\\TestDriver\\TextFilesToTestDriver\\Input\\input_3.txt";
+    string path_exp_input_1 = "TextFilesToTestDriver\\Input\\input_1.txt";
+    string path_exp_input_2 = "TextFilesToTestDriver\\Input\\input_2.txt";
+    string path_exp_input_3 = "TextFilesToTestDriver\\Input\\input_3.txt";
 
-    string path_exp_test_10_1_1 = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\prj\\TestDriver\\TextFilesToTestDriver\\ExpResTest_10_1\\expected_result_test_10_1_1.txt";
-    string path_exp_test_10_1_2 = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\prj\\TestDriver\\TextFilesToTestDriver\\ExpResTest_10_1\\expected_result_test_10_1_2.txt";
-    string path_exp_test_10_1_3 = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\prj\\TestDriver\\TextFilesToTestDriver\\ExpResTest_10_1\\expected_result_test_10_1_3.txt";
+    string path_exp_test_10_1_1 = "TextFilesToTestDriver\\ExpResTest_10_1\\expected_result_test_10_1_1.txt";
+    string path_exp_test_10_1_2 = "TextFilesToTestDriver\\ExpResTest_10_1\\expected_result_test_10_1_2.txt";
+    string path_exp_test_10_1_3 = "TextFilesToTestDriver\\ExpResTest_10_1\\expected_result_test_10_1_3.txt";
 
-    string path_exp_test_10_2_1 = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\prj\\TestDriver\\TextFilesToTestDriver\\ExpResTest_10_2\\expected_result_test_10_2_1.txt";
-    string path_exp_test_10_2_2 = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\prj\\TestDriver\\TextFilesToTestDriver\\ExpResTest_10_2\\expected_result_test_10_2_2.txt";
-    string path_exp_test_10_2_3 = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\prj\\TestDriver\\TextFilesToTestDriver\\ExpResTest_10_2\\expected_result_test_10_2_3.txt";
+    string path_exp_test_10_2_1 = "TextFilesToTestDriver\\ExpResTest_10_2\\expected_result_test_10_2_1.txt";
+    string path_exp_test_10_2_2 = "TextFilesToTestDriver\\ExpResTest_10_2\\expected_result_test_10_2_2.txt";
+    string path_exp_test_10_2_3 = "TextFilesToTestDriver\\ExpResTest_10_2\\expected_result_test_10_2_3.txt";
 
-    string path_exp_test_10_3_1 = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\prj\\TestDriver\\TextFilesToTestDriver\\ExpResTest_10_3\\expected_result_test_10_3_1.txt";
-    string path_exp_test_10_3_2 = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\prj\\TestDriver\\TextFilesToTestDriver\\ExpResTest_10_3\\expected_result_test_10_3_2.txt";
-    string path_exp_test_10_3_3 = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\prj\\TestDriver\\TextFilesToTestDriver\\ExpResTest_10_3\\expected_result_test_10_3_3.txt";
+    string path_exp_test_10_3_1 = "TextFilesToTestDriver\\ExpResTest_10_3\\expected_result_test_10_3_1.txt";
+    string path_exp_test_10_3_2 = "TextFilesToTestDriver\\ExpResTest_10_3\\expected_result_test_10_3_2.txt";
+    string path_exp_test_10_3_3 = "TextFilesToTestDriver\\ExpResTest_10_3\\expected_result_test_10_3_3.txt";
 
 
-    string path_input = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\TextFile\\input.txt";
-    string path_output = "D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\TextFile\\output.txt";
+    string path_input = "TextFile\\input.txt";
+    string path_output = "TextFile\\output.txt";
 
     vector<string> input_db = Input(path_exp_input_1, path_exp_input_2, path_exp_input_3);
 
@@ -38,7 +35,7 @@ int main()
     vector<string> Test_10_3 = Input(path_exp_test_10_3_1, path_exp_test_10_3_2, path_exp_test_10_3_3);
 
 
-    ofstream auto_test("D:\\BMTP\\Zadorozhnyi-Kostiantyn-KB-21\\lab10\\TextFile\\auto_test.txt");
+    ofstream auto_test("TextFile\\auto_test.txt");
     for(int i = 0; i < 3; i++){
         auto_test << "Test " << i + 1 << endl;
         cout << "Test " << i + 1 << endl;
@@ -60,10 +57,6 @@ int main()
         else{
             auto_test << "Task 10.1 - failed" << endl;
             cout << "Task 10.1 - failed" << endl;
-            cout << "Result" << endl;
-            cout << read << endl;
-            cout << "Expected Result" << endl;
-            cout << Test_10_1[i] << endl;
         }
 
         //test task_10_2
@@ -79,9 +72,6 @@ int main()
         else{
             auto_test << "Task 10.2 - failed" << endl;
             cout << "Task 10.2 - failed" << endl;
-            cout << read << endl;
-            cout << "Expected Result" << endl;
-            cout << Test_10_2[i] << endl;
         }
 
         //test task_10_3
@@ -96,9 +86,6 @@ int main()
         else{
             auto_test << "Task 10.3 - failed" << endl;
             cout << "Task 10.3 - failed" << endl;
-            cout << read << endl;
-            cout << "Expected Result" << endl;
-            cout << Test_10_3[i] << endl;
         }
     }
     auto_test.close();

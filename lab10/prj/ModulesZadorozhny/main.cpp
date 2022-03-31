@@ -56,7 +56,7 @@ string boolToString(bool b){
 string copyright(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
-    return "Zadorozhny Konstantin Ð’Â©";
+    return "Zadorozhny Konstantin Ð â€™Ð’Â©";
 }
 
 string returnExpression(int a, int  b){
@@ -84,7 +84,7 @@ string s_calculation_to_string(int x, int y, int z){
 
 string ReadFile(string path_file){
     ifstream file(path_file);
-    if(!file.is_open()) return "ERROR";
+    if(!file.is_open()) return path_file + " not open";
     string text = "";
     string line;
     while (getline(file, line)){
@@ -98,14 +98,14 @@ int task_10_1(string path_output, string path_input){
     ofstream output(path_output);
     if(!output.is_open()) return -1;
 
-    output << "Çàäîðîæíèé Êîñòÿíèòèí" << endl;
-    output << "ÖÍÒÓ | Êðîïèâíèöüêèé | Óêðà¿íà | 2022" << endl;
+    output << "Ð—Ð°Ð´Ð¾Ñ€Ð¾Ð¶Ð½Ð¸Ð¹ ÐšÐ¾ÑÑ‚ÑÐ½Ð¸Ñ‚Ð¸Ð½" << endl;
+    output << "Ð¦ÐÐ¢Ð£ | ÐšÑ€Ð¾Ð¿Ð¸Ð²Ð½Ð¸Ñ†ÑŒÐºÐ¸Ð¹ | Ð£ÐºÑ€Ð°Ñ—Ð½Ð° | 2022" << endl;
 
     char punctuation[2] {'!', '?'};
     int countExclamationMark = 0;
     int countQuestionMark = 0;
 
-    char vowels[] {'à', 'å', 'è', '³', 'î', 'ó', 'ÿ', 'þ', 'º', '¿'};
+    char vowels[] {'Ð°', 'Ðµ', 'Ð¸', 'Ñ–', 'Ð¾', 'Ñƒ', 'Ñ', 'ÑŽ', 'Ñ”', 'Ñ—'};
 
     string text = ReadFile(path_input);
 
@@ -113,15 +113,15 @@ int task_10_1(string path_output, string path_input){
         text.erase(remove(text.begin(), text.end(), vowels[i]), text.end());
         text.erase(remove(text.begin(), text.end(), vowels[i] - 32), text.end());
     }
-    text.erase(remove(text.begin(), text.end(), '²'), text.end());
+    text.erase(remove(text.begin(), text.end(), 'Ð†'), text.end());
 
     for(int i = 0; i < text.length(); i++){
         if(text[i] == punctuation[0]) countExclamationMark++;
         if(text[i] == punctuation[1]) countQuestionMark++;
     }
 
-    output << "Ê³ëüê³ñòü çíàê³â îêëèêó - " << countExclamationMark << endl;
-    output << "Ê³ëüê³ñòü çíàê³â ïèòàííÿ - " << countQuestionMark << endl;
+    output << "ÐšÑ–Ð»ÑŒÐºÑ–ÑÑ‚ÑŒ Ð·Ð½Ð°ÐºÑ–Ð² Ð¾ÐºÐ»Ð¸ÐºÑƒ - " << countExclamationMark << endl;
+    output << "ÐšÑ–Ð»ÑŒÐºÑ–ÑÑ‚ÑŒ Ð·Ð½Ð°ÐºÑ–Ð² Ð¿Ð¸Ñ‚Ð°Ð½Ð½Ñ - " << countQuestionMark << endl;
 
     output << text;
 
@@ -143,9 +143,9 @@ int task_10_2(string path_file){
                       "I", "Yi", "Y", "K", "L", "M", "N", "O", "P", "R", "S",
                       "T", "U", "F", "Kh", "Ts", "Ch", "Sh", "Shch", "Yu", "Ya", ""};
 
-    char ukr[] {'a', 'á', 'â', 'ã', '´', 'ä', 'å', 'º', 'æ', 'ç', 'è',
-                '³', '¿', 'é', 'ê', 'ë', 'ì', 'í', 'î', 'ï', 'ð', 'ñ',
-                'ò', 'ó', 'ô', 'õ', 'ö', '÷', 'ø', 'ù', 'þ', 'ÿ', 'ü'};
+    char ukr[] {'a', 'Ð±', 'Ð²', 'Ð³', 'Ò‘', 'Ð´', 'Ðµ', 'Ñ”', 'Ð¶', 'Ð·', 'Ð¸',
+                'Ñ–', 'Ñ—', 'Ð¹', 'Ðº', 'Ð»', 'Ð¼', 'Ð½', 'Ð¾', 'Ð¿', 'Ñ€', 'Ñ',
+                'Ñ‚', 'Ñƒ', 'Ñ„', 'Ñ…', 'Ñ†', 'Ñ‡', 'Ñˆ', 'Ñ‰', 'ÑŽ', 'Ñ', 'ÑŒ'};
 
 
     string all_text;
@@ -185,7 +185,7 @@ int task_10_2(string path_file){
 }
 
 int task_10_3(float x, float y, float z, int b,string path_file){
-    fstream output(path_file, ios:: app);
+    fstream output(path_file, ios::app);
 
     if(!output.is_open()) return -1;
 
@@ -199,6 +199,7 @@ int task_10_3(float x, float y, float z, int b,string path_file){
 vector<string> Input(string path_input_1, string path_input_2, string path_input_3){
 
     vector<string> input;
+
     string text_input_1 = ReadFile(path_input_1);
 
     string text_input_2 = ReadFile(path_input_2);
@@ -221,7 +222,8 @@ vector<string> ExpectedResultTest_10_2(string path_test_10_2_1, string path_test
     strftime(cur_time, 128, "%Y-%m-%d %H:%M:%S", ptm);
 
     vector<string> expected_result;
-        string test_10_2_1 = ReadFile(path_test_10_2_1);
+
+    string test_10_2_1 = ReadFile(path_test_10_2_1);
     test_10_2_1 += cur_time;
     test_10_2_1 += '\n';
 
