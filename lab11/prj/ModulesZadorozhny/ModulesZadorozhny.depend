@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1650885788 source:d:\bmtp\zadorozhnyi-kostiantyn-kb-21\lab11\prj\moduleszadorozhny\main.cpp
+	<iostream>
+	<vector>
+	<cstring>
+	<string>
+	<iomanip>
+	<limits>
+	"../struct_type_project_2.h"
+
+1650885499 d:\bmtp\zadorozhnyi-kostiantyn-kb-21\lab11\prj\struct_type_project_2.h
+
