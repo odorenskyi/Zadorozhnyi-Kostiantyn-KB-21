@@ -135,7 +135,12 @@ void InputGenderOrTypeWork(string title, char &input, char checkMark, char defau
         str
     );
 
-    input = str[0];
+    if(str[0] == checkMark - 32){
+        input = str[0] + 32;
+    }
+    else{
+        input = str[0];
+    }
 
     if(input != checkMark){
         input = defaultMark;
@@ -233,11 +238,12 @@ bool YouWorked(){
 
 entry InputPersonalCard(){
     entry personalcard;
-
-     InputDate(
+    cin.ignore();
+    InputDate(
         "Дата заповнення: ",
         personalcard.creationDate
     );
+
 
     InputNumber(
         "Табельний номер:",
@@ -322,6 +328,7 @@ entry InputPersonalCard(){
         );
     }
 
+
     cout << setw(20) << "" << "+———————————————————————————————————————+" << endl;
     cout << setw(20) << "" << "|         Дані успішно занесено         |" << endl;
     cout << setw(20) << "" << "+———————————————————————————————————————+" << endl << endl;
@@ -338,7 +345,14 @@ void RemovePersonalCard(vector<entry> &database, int id){
     for(int i = 0; i < database.size(); i++){
         if(database[i].id == id){
             database.erase(iter + i);
+            cout << setw(20) << "" << "+———————————————————————————————————————+" << endl;
+            cout << setw(20) << "" << "|            Запис видалено             |" << endl;
+            cout << setw(20) << "" << "+———————————————————————————————————————+" << endl << endl;
             return;
         }
     }
+
+    cout << setw(20) << "" << "+———————————————————————————————————————+" << endl;
+    cout << setw(20) << "" << "|           Запис не знайдено           |" << endl;
+    cout << setw(20) << "" << "+———————————————————————————————————————+" << endl << endl;
 }
