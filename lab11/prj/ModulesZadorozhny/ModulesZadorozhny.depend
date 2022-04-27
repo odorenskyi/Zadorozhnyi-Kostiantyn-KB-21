@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1650969379 source:d:\bmtp\zadorozhnyi-kostiantyn-kb-21\lab11\prj\moduleszadorozhny\main.cpp
+1651063392 source:d:\bmtp\zadorozhnyi-kostiantyn-kb-21\lab11\prj\moduleszadorozhny\main.cpp
 	<iostream>
 	<vector>
 	<cstring>
@@ -9,4 +9,6 @@
 	"struct_type_project_2.h"
 
 1650885499 d:\bmtp\zadorozhnyi-kostiantyn-kb-21\lab11\prj\struct_type_project_2.h
+
+1650885499 d:\bmtp\zadorozhnyi-kostiantyn-kb-21\lab11\prj\h-files\struct_type_project_2.h
 

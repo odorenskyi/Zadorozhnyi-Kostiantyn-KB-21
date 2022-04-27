@@ -17,10 +17,10 @@
 					<Add option="-Wall" />
 					<Add option="-g" />
 					<Add option="-finput-charset=utf-8 -fexec-charset=cp1251" />
-					<Add directory="../../prj" />
+					<Add directory="../h-files" />
 				</Compiler>
 				<ResourceCompiler>
-					<Add directory="../../prj" />
+					<Add directory="../h-files" />
 				</ResourceCompiler>
 			</Target>
 			<Target title="Release">

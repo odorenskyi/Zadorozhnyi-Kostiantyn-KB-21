@@ -120,6 +120,7 @@ void InputDate(string title, date &creationDate){
            (creationDate.month > 12 || creationDate.month <= 0) ||
             (creationDate.year > 2072 || creationDate.year <= 0)){
             cout << "Дата заповнена неправильно" << endl;
+            iscorrect = false;
             continue;
         }
 
