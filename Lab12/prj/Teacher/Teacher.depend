@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1652348440 source:d:\university\bmtp\zadorozhnyi-kostiantyn-kb-21\lab12\prj\teacher\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<sstream>
+	<cstring>
+	<cmath>
+	"../ModulesZadorozhnyi.h"
+
+1652347904 d:\university\bmtp\zadorozhnyi-kostiantyn-kb-21\lab12\prj\moduleszadorozhnyi.h
+	<cmath>
+
